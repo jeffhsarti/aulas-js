@@ -8,14 +8,15 @@
 
 body {
   background-color: #B1D4E0;
-  width: 100vw;
-  height: 100vh;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-  height: 15%;
+  width: auto;
   background-color: #145DA0;
   border-bottom: #2E8BC0;
   position: relative;
@@ -26,13 +27,12 @@ header {
 }
 
 header .brand-conteiner {
-  height: 100%;
   display: flex;
   align-items: center;
 }
 
 .brand-conteiner img {
-  height: 75%;
+  height: 3rem;
 }
 
 .brand-conteiner h3 {
@@ -63,4 +63,121 @@ header ul li:hover {
   font-weight: 700;
   background-color: #0C2D48;
   border-radius: 12px;
+}
+
+footer {
+  background-color: #145DA0;
+  border-top: 1px solid #2E8BC0;
+  padding: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .faq-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-conteiner .faq-row {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.faq-conteiner h2,
+.row h2 {
+  font-size: 2rem;
+}
+
+.faq-row ul {
+  list-style: none;
+}
+
+.faq-row ul li {
+  font-size: 1.25rem;
+  padding: 0.75rem 0.5rem;
+  font-weight: bolder;
+}
+
+.faq-row ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .contact-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-conteiner .row {
+  display: flex;
+  padding: 0.75rem 0.5rem;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.row h4 {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.row h3,
+.row a {
+  font-size: 1.5rem;
+}
+
+.row a,
+.row h3 span {
+  margin-right: 1rem;
+  color: white;
+}
+
+#sobre {
+  height: auto;
+  padding: 2rem;
+}
+
+#produtos {
+  padding: 2rem;
+  height: auto;
+  background-color: #2E8BC0;
+}
+
+#historia,
+#valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  position: relative;
+}
+
+#historia h2,
+#valores h2 {
+  font-size: 2rem;
+  text-align: center; 
+  font-weight: bolder;
+}
+
+#historia p,
+#valores p {
+  font-family: cursive;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0.5rem 0;
+  width: 75%;
+}
+
+#historia p::first-letter,
+#valores p::first-letter {
+  margin-left: 20px;
+}
+
+#historia img,
+#valores img {
+  min-width: 250px;
+  margin: 1.25rem 0 1.25rem;
 }
