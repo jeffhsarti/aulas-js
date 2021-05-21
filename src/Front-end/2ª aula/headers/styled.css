@@ -135,19 +135,16 @@ footer .contact-conteiner {
   color: white;
 }
 
-#sobre {
-  height: auto;
-  padding: 2rem;
-}
-
+#sobre,
 #produtos {
-  padding: 2rem;
   height: auto;
-  background-color: #2E8BC0;
+  padding: 2rem;
 }
 
 #historia,
-#valores {
+#valores,
+#topzeras,
+#menos-topzeras {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,10 +153,21 @@ footer .contact-conteiner {
 }
 
 #historia h2,
-#valores h2 {
-  font-size: 2rem;
+#valores h2,
+#topzeras h2,
+#menos-topzeras h2 {
+  font-size: 2.25rem;
   text-align: center; 
   font-weight: bolder;
+}
+
+#topzeras h2,
+#menos-topzeras h2 {
+  margin-bottom: 2rem;
+}
+
+#menos-topzeras h2 {
+  margin-top: 2rem;
 }
 
 #historia p,
@@ -180,4 +188,67 @@ footer .contact-conteiner {
 #valores img {
   min-width: 250px;
   margin: 1.25rem 0 1.25rem;
+}
+
+#produtos {
+  background-color: #2E8BC0;
+}
+
+.card-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 75%;
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: -10px 10px 20px 0px #4e4a4e;
+} 
+
+.card-img {
+  display: block;
+  object-fit: contain;
+  height: 250px;
+  width: 100%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.card-body {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.25rem 0.75rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-desc {
+  font-family: cursive;
+  font-size: 0.8rem;
+}
+
+.card-btn {
+  margin: 0 auto;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-radius: 12px;
+}
+
+.card-btn:hover {
+  background-color: #B1D4E0;
 }
