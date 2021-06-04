@@ -1,0 +1,135 @@
+:root {
+  --babyBlue: #B1D4E0;
+  --blueGrotto: #60A3D9;
+  --blue: #2E8BC0;
+  --royalBlue: #0074B7;
+  --darkBlue: #0C2D48;
+  --midnightBlue: #145DA0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+  TIPOGRAFIAS
+*/
+
+h1,
+h2,
+h3,
+p,
+a,
+input,
+label {
+  font-family: Montserrat;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h2, 
+h3 {
+  color: var(--midnightBlue);
+}
+
+p, a {
+  font-size: 1.2em;
+}
+
+.color-white {
+  color: white;
+}
+
+
+/* 
+  Conteiners
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  background-color: var(--babyBlue);
+  width: auto;
+}
+
+header .menu-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu-brand img {
+  width: 75px;
+}
+
+header .menu-items ul {
+  display: flex;
+}
+
+.menu-item a {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: var(--darkBlue);
+  font-weight: 600;
+}
+
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a.selected {
+  outline: 0;
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  background-color: var(--darkBlue);
+  width: auto;
+}
+
+footer .split {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+footer .split > div {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+footer .split > div h3 {
+  margin-bottom: 2em;
+}
+
+
+ul {
+  list-style: none;
+}
+
