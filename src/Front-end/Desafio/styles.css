@@ -1,0 +1,129 @@
+:root {
+  --ff-header: "Playfair Display";
+  --ff-paragraph: Roboto;
+  --clr-light1: #FFFFFF;
+  --clr-light2: #F3EED9;
+  --clr-dark1: #824936;
+  --clr-dark2: #222C2A;
+}
+
+*,
+*::before,
+*::after {
+  color: var(--clr-dark2);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPOGRAPHY */
+
+h1, 
+h2 {
+  font-family: var(--ff-header);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: var(--ff-paragraph);
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+p.light {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.clr-brown {
+  color: var(--clr-dark1);
+}
+
+.clr-cream {
+  color: var(--clr-light2);
+}
+
+.clr-white {
+  color: var(--clr-light1);
+}
+
+/* CONTEINERS */
+
+.conteiner {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.--conteiner-narrow {
+  align-items: center;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split > * + * {
+  margin-top: 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.bclr-brown {
+  background-color: var(--clr-dark1);
+}
+
+.bclr-cream {
+  background-color: var(--clr-light2);
+}
+
+.bclr-white {
+  background-color: var(--clr-light1);
+}
+
+.bclr-dark {
+  background-color: var(--clr-dark2);
+}
+
+
+@media (min-width: 40em) {
+  p.light,
+  header h1 {
+    max-width: 60%;
+  }
+  .conteiner {
+    padding: 5em 8em;
+  }
+
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+}
