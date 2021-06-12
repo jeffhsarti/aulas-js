@@ -1,0 +1,11 @@
+header {
+  position: relative;
+  width: auto;
+  color: #24d2e9;
+}
+
+h1 {
+  font-size: 3rem;
+  color: inherit;
+  transition: color ease-in 2s;
+}

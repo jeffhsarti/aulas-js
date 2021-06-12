@@ -1,0 +1,36 @@
+button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #24d2e9;
+  color: #333333;
+  border: 1px solid #24d2e9;
+  padding: 0;
+  border-radius: 12px;
+  width: 12rem;
+}
+
+button:hover {
+  border: 1px solid #2a95a3;
+}
+
+button .btn-icon {
+  padding: 0.5rem 0.75rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  flex-basis: 25%;
+  height: 100%;
+  border-right: 1px solid #2a95a3;
+}
+
+button .btn-icon:hover {
+  background-color: #2a95a3;
+  color: white;
+}
+
+
+button .btn-content {
+  padding: 0.5rem 0.75rem;
+  height: 100%;
+  flex-basis: 75%;
+}
