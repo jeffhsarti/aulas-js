@@ -1,0 +1,22 @@
+nav.navbar .navbar-collapse {
+  flex-grow: unset;
+  flex-basis: unset;
+}
+
+nav.navbar .navbar-collapse .nav-link {
+  padding: 1em 1.5em !important;
+}
+
+nav.navbar .navbar-collapse .nav-link:hover,
+nav.navbar .navbar-collapse .nav-link:focus {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carousel-section {
+  width: 80%;
+}
