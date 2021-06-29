@@ -3,6 +3,8 @@
 // operador for
 // iterando de 1 a 100 e imprimindo na tela
 console.log("for normal");
+//    variável         teste         incremento 
+//  de controle       lógico           
 for (let i = 1; i < 101 /* i <= 100 */; i++) {
   console.log(i);
 }
